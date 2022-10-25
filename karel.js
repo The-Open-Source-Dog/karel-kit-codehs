@@ -68,3 +68,7 @@ function reverseTwice(){
     reverse();
     reverse();
 }
+// fulfill lesson requirement, interchangeable with pancakes
+function makePancakes(){
+    pankake();
+}
