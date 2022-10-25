@@ -68,7 +68,101 @@ function reverseTwice(){
     reverse();
     reverse();
 }
-// fulfill lesson requirement, interchangeable with pancakes
+// move four times
+function moveFour(){
+    move();
+	move();
+	move();
+	move();
+}
+function moveThree(){
+    move();
+	move();
+	move();
+}
+// move down
+function down() {
+    if(facingSouth()){
+        turnLeft();
+    }
+    if(facingNorth()){
+        turnRight();
+    }
+    if(facingWest()) {
+        turnLeft();
+        move();
+        turnRight();
+    }
+    if(facingEast()) {
+        turnRight();
+        move();
+        turnLeft();
+    }
+}
+// move up
+function up() {
+    if(facingSouth()){
+        turnLeft();
+    }
+    if(facingNorth()){
+        turnRight();
+    }
+    if(facingWest()) {
+        turnRight();
+        move();
+        turnLeft();
+    }
+    if(facingEast()) {
+        turnLeft();
+        move();
+        turnRight();
+    }
+}
+// make tower
+function tower() {
+    putBall();
+    up();
+    putBall();
+    up();
+    putBall();
+    up();
+    down();
+    down();
+    down();
+}
+// up two
+function upTwo() {
+    up();
+    up();
+}
+// down two
+function downTwo() {
+    down();
+    down();
+}
+// lesson reqirments
+// fulfill lesson requirement, interchangeable with moveFour
+function runToFinish(){
+    moveFour();
+}
+// fulfill lesson requirement, interchangeable with moveThree
+function runToHurdle(){
+    moveThree();
+}
+
+function jumpHurdle(){
+     if(facingWest()) {
+        up();
+	    reverse();
+        down();
+    }
+    if(facingEast()) {
+        up();
+        move();
+        down();
+    }
+}
+ // fulfill lesson requirement, interchangeable with pancakes
 function makePancakes(){
     pankake();
 }
