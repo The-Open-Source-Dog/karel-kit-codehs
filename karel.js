@@ -141,6 +141,23 @@ function downTwo() {
     down();
     down();
 }
+// save move
+function safeMove() {
+    if(frontIsClear()) {
+        move();
+    }
+}
+// safe revese
+function safeReverse() {
+    turnAround();
+    if(frontIsClear()) {
+        turnAround();
+        reverse();
+    } else {
+        turnAround();
+    }
+
+}
 // lesson reqirments
 // fulfill lesson requirement, interchangeable with moveFour
 function runToFinish(){
