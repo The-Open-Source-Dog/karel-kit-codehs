@@ -22,13 +22,13 @@
 // SOFTWARE.
 // Source Code is avaibele at https://github.com/The-Open-Source-Dog/karel-kit-codehs/
 // Make karel the dog turn right
-function turnRight(){
+function kturnRight(){
     turnLeft();
     turnLeft();
     turnLeft();
 }
 // oops, i mised the target
-function turnAround(){
+function kturnAround(){
     turnLeft();
     turnLeft();
 }
