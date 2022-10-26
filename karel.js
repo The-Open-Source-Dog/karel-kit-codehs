@@ -158,6 +158,22 @@ function safeReverse() {
     }
 
 }
+// invert, take ball if their, if not place ball
+function invert() {
+    if(ballsPresent()) {
+        takeBall();
+    } else {
+        putBall();
+    }
+}
+// safeTakeBall()
+function safeTakeBall() {
+    if(ballsPresent()) {
+        takeBall();
+    } else {
+    
+    }
+}
 // lesson reqirments
 // fulfill lesson requirement, interchangeable with moveFour
 function runToFinish(){
