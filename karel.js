@@ -57,9 +57,9 @@ function eatStack(){
 }
 // beep beep, backing up
 function reverse(){
-    turnAround();
+    kturnAround();
     move();
-    turnAround();
+    kturnAround();
 }
 function moveTwice(){
     move();
@@ -87,15 +87,15 @@ function down() {
         turnLeft();
     }
     if(facingNorth()){
-        turnRight();
+        kturnRight();
     }
     if(facingWest()) {
         turnLeft();
         move();
-        turnRight();
+        kturnRight();
     }
     if(facingEast()) {
-        turnRight();
+        kturnRight();
         move();
         turnLeft();
     }
@@ -109,14 +109,14 @@ function up() {
         turnRight();
     }
     if(facingWest()) {
-        turnRight();
+        kturnRight();
         move();
         turnLeft();
     }
     if(facingEast()) {
         turnLeft();
         move();
-        turnRight();
+        kturnRight();
     }
 }
 // make tower
